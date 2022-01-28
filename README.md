@@ -2,9 +2,9 @@
 
 ---
 
-This is the code and additional documentation for the anonymous CogSci 2022 submission "Improving Systematic Generalization Through Modularity and Augmentation".
+This repository contains the code and additional documentation for the anonymous CogSci 2022 submission "Improving Systematic Generalization Through Modularity and Augmentation".
 
-The repository contains:
+Contents:
 
 - The full domain-specific language (DSL) that was used for structured data augmentation, including the meta-grammar, and the L-system programs for each adverb in gSCAN.
 - The full model architecture for both the baseline and the modular model.
@@ -67,6 +67,13 @@ North West -> West North
 
 ### The program for each gSCAN adverb
 
+By selecting a subset of rules from the meta-grammar, each adverb program can be constructed.
+Note that in the meta-grammar you can have a rules like `Pull -> ACTION Pull` and
+`ACTION -> Tl`. Fully uppercase symbols need to be replaced by another symbol for the adverb program
+to be finished. 
+
+Additionally, while zigzagging type adverbs are applied recursively to a sequence instead of in parallel.
+
 <details>
 <summary>Cautiously</summary>
 <br>
@@ -85,9 +92,9 @@ Walk -> Tl Tr Tr Tl Walk
 
 ```Python3
 
-Pull -> Tl Tr Tr Tl Pull
-Push -> Tl Tr Tr Tl Push
-Walk -> Tl Tr Tr Tl Walk
+Pull -> Pull Stay
+Push -> Push Stay
+Walk -> Walk Stay
 ```
 </details>
 
@@ -97,9 +104,12 @@ Walk -> Tl Tr Tr Tl Walk
 
 ```Python3
 
-Pull -> Tl Tr Tr Tl Pull
-Push -> Tl Tr Tr Tl Push
-Walk -> Tl Tr Tr Tl Walk
+Push -> Tl Tl Tl Tl Push
+Pull -> Tl Tl Tl Tl Pull
+West -> Tl Tl Tl Tl West
+South -> Tl Tl Tl Tl South
+North -> Tl Tl Tl Tl North
+East -> Tl Tl Tl Tl East
 ```
 </details>
 
@@ -109,12 +119,20 @@ Walk -> Tl Tr Tr Tl Walk
 
 ```Python3
 
-Pull -> Tl Tr Tr Tl Pull
-Push -> Tl Tr Tr Tl Push
-Walk -> Tl Tr Tr Tl Walk
+West South -> South West
+West North -> North West
+East North -> North East
+East South -> South East
 ```
 </details>
 
 
 ### Sampling new adverbs
 
+New adverbs can be sampled from the meta-grammar by selecting rules from the meta-grammar
+and iteratively replacing all right-hand symbols that aren't action primitives by
+other rules with that symbol on the LHS. Alternatively, all possible adverb programs can be generated
+and one can sample from this. For a function that does the latter see `AdverbWorld.generate_all_adverbs()`
+in `Code/GroundedScan/dsl.py`
+
+## 
