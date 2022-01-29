@@ -1,6 +1,6 @@
 # Experiment Scripts
 
-This folder contains all scripts to run the experiments in the paper. 
+This folder contains all scripts to run the experiments in the paper. All the scripts can be used both to train and to test by setting the mode to `train` or `test`.
 
 ## Run locally
 For both the baseline and the modular model the commands to run directly on your machine are in `all_experiments.sh` in the respective folders.
