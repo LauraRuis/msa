@@ -170,6 +170,42 @@ See Interaction Module under Modularity & Augmentation above
 
 ### Transformation Module
 
+<details>
+<summary>Click for architecture details.</summary>
+<br>
+
+
+```
+Total parameters: 306625
+encoder_module_dict.input_tensor.embedding.weight : [21, 25]
+encoder_module_dict.input_tensor.lstm.weight_ih_l0 : [400, 25]
+encoder_module_dict.input_tensor.lstm.weight_hh_l0 : [400, 100]
+encoder_module_dict.input_tensor.lstm.bias_ih_l0 : [400]
+encoder_module_dict.input_tensor.lstm.bias_hh_l0 : [400]
+encoder_module_dict.input_tensor.lstm.weight_ih_l0_reverse : [400, 25]
+encoder_module_dict.input_tensor.lstm.weight_hh_l0_reverse : [400, 100]
+encoder_module_dict.input_tensor.lstm.bias_ih_l0_reverse : [400]
+encoder_module_dict.input_tensor.lstm.bias_hh_l0_reverse : [400]
+encoder_module_dict.adverb_input_tensor.embedding.weight : [12, 25]
+encoder_module_dict.adverb_input_tensor.lstm.weight_ih_l0 : [400, 25]
+encoder_module_dict.adverb_input_tensor.lstm.weight_hh_l0 : [400, 100]
+encoder_module_dict.adverb_input_tensor.lstm.bias_ih_l0 : [400]
+encoder_module_dict.adverb_input_tensor.lstm.bias_hh_l0 : [400]
+encoder_module_dict.adverb_input_tensor.lstm.weight_ih_l0_reverse : [400, 25]
+encoder_module_dict.adverb_input_tensor.lstm.weight_hh_l0_reverse : [400, 100]
+encoder_module_dict.adverb_input_tensor.lstm.bias_ih_l0_reverse : [400]
+encoder_module_dict.adverb_input_tensor.lstm.bias_hh_l0_reverse : [400]
+decoder_module_dict.adverb_target_tensor.embedding.weight : [9, 100]
+decoder_module_dict.adverb_target_tensor.lstm.weight_ih_l0 : [400, 100]
+decoder_module_dict.adverb_target_tensor.lstm.weight_hh_l0 : [400, 100]
+decoder_module_dict.adverb_target_tensor.lstm.bias_ih_l0 : [400]
+decoder_module_dict.adverb_target_tensor.lstm.bias_hh_l0 : [400]
+decoder_module_dict.adverb_target_tensor.join_context.weight : [100, 200]
+decoder_module_dict.adverb_target_tensor.hidden_to_output.weight : [9, 100]
+```
+
+</details>
+
 ## Baseline & Augmentation
 
 ## All other experiments (k=1,5,10,50 and adverb vocabulary=10,50,100,150)
