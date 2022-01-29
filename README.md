@@ -8,7 +8,7 @@ Contents:
 
 - The full domain-specific language (DSL) that was used for structured data augmentation, including the meta-grammar, and the L-system programs for each adverb in gSCAN. See below in this README.
 - The full model architecture and hyperparameters for both the baseline and the modular model. See folder `Architecture`
-- The code for all the experiments and the structured data augmentation. See folder `Code`
+- The code for all the experiments and the structured data augmentation. See folder `Code`. A demo for running the code with a demo dataset can be found in the README in this folder.
 - Scripts to run the experiments in the paper. See folder `Code/Scripts` (details on how to run in README in the same folder)
 - The actual predictions made by the models in all experiments are available once this repository is de-anonymized (too large files to upload).
 - The data used in all experiments are available once this repository is de-anonymized (too large files to upload).
