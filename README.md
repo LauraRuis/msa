@@ -6,10 +6,10 @@ This repository contains the code and additional documentation for the anonymous
 
 Contents:
 
-- The full domain-specific language (DSL) that was used for structured data augmentation, including the meta-grammar, and the L-system programs for each adverb in gSCAN.
-- The full model architecture for both the baseline and the modular model.
-- The code for all the experiments and the structured data augmentation.
-- Scripts to run the experiments in the paper.
+- The full domain-specific language (DSL) that was used for structured data augmentation, including the meta-grammar, and the L-system programs for each adverb in gSCAN. See below in this README.
+- The full model architecture and hyperparameters for both the baseline and the modular model. See folder `Architecture`
+- The code for all the experiments and the structured data augmentation. See folder `Code`
+- Scripts to run the experiments in the paper. See folder `Code/Scripts`
 - The actual predictions made by the models in all experiments are available once this repository is de-anonymized (too large files to upload).
 - The data used in all experiments are available once this repository is de-anonymized (too large files to upload).
 
