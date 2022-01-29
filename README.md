@@ -11,6 +11,7 @@ Contents:
 - The code for all the experiments and the structured data augmentation.
 - Scripts to run the experiments in the paper.
 - The actual predictions made by the models in all experiments are available once this repository is de-anonymized (too large files to upload).
+- The data used in all experiments are available once this repository is de-anonymized (too large files to upload).
 
 ---
 
