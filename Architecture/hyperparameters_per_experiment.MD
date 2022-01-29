@@ -132,7 +132,37 @@ conditional_attention_values_key: None
 <br>
 
 ```
-
+training_batch_size: 200
+k: 5
+upsample_isolated: 100
+test_batch_size: 1
+learning_rate: 0.001
+lr_decay: 0.9
+lr_decay_steps: 20000
+adam_beta_1: 0.9
+adam_beta_2: 0.999
+weight_decay: 1e-05
+evaluate_every: 1000
+max_training_iterations: 200000
+max_testing_examples: None
+splits: test
+max_decoding_steps: 120
+output_file_name: predict.json
+simple_situation_representation: True
+cnn_hidden_num_channels: 50
+cnn_kernel_size: 7
+cnn_dropout_p: 0.1
+grid_size: 6
+embedding_dimension: 25
+num_encoder_layers: 1
+encoder_hidden_size: 100
+encoder_dropout_p: 0.3
+encoder_bidirectional: True
+num_decoder_layers: 1
+decoder_dropout_p: 0.3
+decoder_hidden_size: 100
+use_attention: yes
+use_conditional_attention: yes
 ```
 
 </details>
@@ -144,7 +174,38 @@ conditional_attention_values_key: None
 <br>
 
 ```
-
+training_batch_size: 200
+k: 5
+upsample_isolated: 100
+test_batch_size: 1
+learning_rate: 0.001
+lr_decay: 0.9
+lr_decay_steps: 20000
+adam_beta_1: 0.9
+adam_beta_2: 0.999
+weight_decay: 1e-05
+evaluate_every: 1000
+max_training_iterations: 200000
+max_testing_examples: None
+max_decoding_steps: 120
+output_file_name: predict.json
+cnn_hidden_num_channels: 50
+cnn_kernel_size: 7
+cnn_dropout_p: 0.1
+grid_size: 6
+embedding_dimension: 50
+num_encoder_layers: 1
+encoder_hidden_size: 400
+encoder_dropout_p: 0.2
+encoder_bidirectional: True
+num_decoder_layers: 1
+decoder_dropout_p: 0.2
+decoder_hidden_size: 400
+use_attention: True
+use_conditional_attention: False
+type_attention: luong
+attention_values_key: adverb_input_tensor
+conditional_attention_values_key: none
 ```
 
 </details>
@@ -170,6 +231,38 @@ See Interaction Module under Modularity & Augmentation above
 <br>
 
 ```
+training_batch_size: 200
+k: 5
+upsample_isolated: 100
+test_batch_size: 1
+learning_rate: 0.001
+lr_decay: 0.9
+lr_decay_steps: 20000
+adam_beta_1: 0.9
+adam_beta_2: 0.999 
+weight_decay: 1e-05
+evaluate_every: 1000
+max_training_iterations: 200000
+max_testing_examples: None
+max_decoding_steps: 120
+cnn_hidden_num_channels: 50
+cnn_kernel_size: 7
+cnn_dropout_p: 0.1
+grid_size: 6
+embedding_dimension: 25
+num_encoder_layers: 1
+encoder_hidden_size: 100
+encoder_dropout_p: 0.3
+encoder_bidirectional: True
+num_decoder_layers: 1
+decoder_dropout_p: 0.3
+decoder_hidden_size: 100
+simplified_architecture: False
+use_attention: True
+use_conditional_attention: False
+type_attention: luong
+attention_values_key: adverb_input_tensor
+conditional_attention_values_key: none
 
 ```
 
