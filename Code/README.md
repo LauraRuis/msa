@@ -10,7 +10,16 @@ Go to the folder `multimodal_seq2seq_gSCAN`, install the dependencies with `setu
 python3.8 -m seq2seq --k=0 --mode=train --max_decoding_steps=120 --max_testing_examples=5 \
   --data_directory=data/demo_dataset --attention_type=bahdanau --no_auxiliary_task \
   --generate_vocabularies --conditional_attention --training_batch_size=2 \
-  --model_size=small --max_training_iterations=100 --print_every=1 --evaluate_every=50
+  --model_size=small --max_training_iterations=100 --print_every=1 --evaluate_every=10  --output_directory=demo
+```
+
+### Test
+
+```
+python3.8 -m seq2seq --k=0 --mode=test --resume_from_file=demo/model_best.pth.tar --max_decoding_steps=120 --max_testing_examples=5 \
+  --data_directory=data/demo_dataset --attention_type=bahdanau --no_auxiliary_task \
+  --generate_vocabularies --conditional_attention --training_batch_size=2 \
+  --model_size=small --max_training_iterations=100 --print_every=1 --evaluate_every=10 --output_directory=demo
 ```
 
 ## Modular
