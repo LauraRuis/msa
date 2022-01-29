@@ -8,7 +8,7 @@ the testing metrics should already be perfect. Try it yourself below!
 
 ### Train
 
-Go to the folder `multimodal_seq2seq_gSCAN`, install the dependencies with `setup.py`, and run the below command to demo the baseline training.
+Go to the folder `multimodal_seq2seq_gSCAN` (one level up), install the dependencies with `setup.py`, and run the below command to demo the baseline training.
 ```
 python3.8 -m seq2seq --k=0 --mode=train --max_decoding_steps=120 --max_testing_examples=5 \
   --data_directory=data/demo_dataset --attention_type=bahdanau --no_auxiliary_task \
@@ -41,7 +41,7 @@ This should give the output (if you trained a model with the code above):
 
 ### Train
 
-Go to the folder `Modular_gSCAN`, install the dependencies with `setup.py`, and run the below command to demo the position module training.
+Go to the folder `Modular_gSCAN` (one level up), install the dependencies with `setup.py`, and run the below command to demo the position module training.
 
 ```
 python3.8 -m Modularity --mode=train --data_directory=data/demo_dataset \
