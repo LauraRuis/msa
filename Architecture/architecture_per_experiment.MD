@@ -11,6 +11,8 @@
 ### Interaction Module
 
 ### Adverb Module
+
+```
 Total parameters: 4512350
 encoder_module_dict.input_tensor.embedding.weight : [171, 50]
 encoder_module_dict.input_tensor.lstm.weight_ih_l0 : [1600, 50]
@@ -37,6 +39,7 @@ decoder_module_dict.adverb_target_tensor.lstm.bias_ih_l0 : [1600]
 decoder_module_dict.adverb_target_tensor.lstm.bias_hh_l0 : [1600]
 decoder_module_dict.adverb_target_tensor.join_context.weight : [400, 800]
 decoder_module_dict.adverb_target_tensor.hidden_to_output.weight : [9, 400]
+```
 
 ## Modularity
 
