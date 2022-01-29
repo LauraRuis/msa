@@ -2,6 +2,48 @@
 
 ## Baseline
 
+<details>
+<summary>Click for architecture details.</summary>
+<br>
+ 
+```
+2021-12-07 13:21 Total parameters: 440275
+2021-12-07 13:21 situation_encoder.conv_1.weight : [50, 16, 1, 1]
+2021-12-07 13:21 situation_encoder.conv_1.bias : [50]
+2021-12-07 13:21 situation_encoder.conv_2.weight : [50, 16, 5, 5]
+2021-12-07 13:21 situation_encoder.conv_2.bias : [50]
+2021-12-07 13:21 situation_encoder.conv_3.weight : [50, 16, 7, 7]
+2021-12-07 13:21 situation_encoder.conv_3.bias : [50]
+2021-12-07 13:21 visual_attention.key_layer.weight : [100, 150]
+2021-12-07 13:21 visual_attention.query_layer.weight : [100, 100]
+2021-12-07 13:21 visual_attention.energy_layer.weight : [1, 100]
+2021-12-07 13:21 encoder.embedding.weight : [21, 25]
+2021-12-07 13:21 encoder.lstm.weight_ih_l0 : [400, 25]
+2021-12-07 13:21 encoder.lstm.weight_hh_l0 : [400, 100]
+2021-12-07 13:21 encoder.lstm.bias_ih_l0 : [400]
+2021-12-07 13:21 encoder.lstm.bias_hh_l0 : [400]
+2021-12-07 13:21 encoder.lstm.weight_ih_l0_reverse : [400, 25]
+2021-12-07 13:21 encoder.lstm.weight_hh_l0_reverse : [400, 100]
+2021-12-07 13:21 encoder.lstm.bias_ih_l0_reverse : [400]
+2021-12-07 13:21 encoder.lstm.bias_hh_l0_reverse : [400]
+2021-12-07 13:21 enc_hidden_to_dec_hidden.weight : [100, 100]
+2021-12-07 13:21 enc_hidden_to_dec_hidden.bias : [100]
+2021-12-07 13:21 textual_attention.key_layer.weight : [100, 100]
+2021-12-07 13:21 textual_attention.query_layer.weight : [100, 100]
+2021-12-07 13:21 textual_attention.energy_layer.weight : [1, 100]
+2021-12-07 13:21 attention_decoder.queries_to_keys.weight : [100, 200]
+2021-12-07 13:21 attention_decoder.queries_to_keys.bias : [100]
+2021-12-07 13:21 attention_decoder.embedding.weight : [9, 100]
+2021-12-07 13:21 attention_decoder.lstm.weight_ih_l0 : [400, 300]
+2021-12-07 13:21 attention_decoder.lstm.weight_hh_l0 : [400, 100]
+2021-12-07 13:21 attention_decoder.lstm.bias_ih_l0 : [400]
+2021-12-07 13:21 attention_decoder.lstm.bias_hh_l0 : [400]
+2021-12-07 13:21 attention_decoder.output_to_hidden.weight : [100, 400]
+2021-12-07 13:21 attention_decoder.hidden_to_output.weight : [9, 100]
+```
+
+</details>
+
 ## Modularity & Augmentation
 
 ### Position Module
@@ -207,6 +249,48 @@ decoder_module_dict.adverb_target_tensor.hidden_to_output.weight : [9, 100]
 </details>
 
 ## Baseline & Augmentation
+
+<details>
+<summary>Click for architecture details.</summary>
+<br>
+
+```
+Total parameters: 5747100
+situation_encoder.conv_1.weight : [50, 16, 1, 1]
+situation_encoder.conv_1.bias : [50]
+situation_encoder.conv_2.weight : [50, 16, 5, 5]
+situation_encoder.conv_2.bias : [50]
+situation_encoder.conv_3.weight : [50, 16, 7, 7]
+situation_encoder.conv_3.bias : [50]
+visual_attention.key_layer.weight : [400, 150]
+visual_attention.query_layer.weight : [400, 400]
+visual_attention.energy_layer.weight : [1, 400]
+encoder.embedding.weight : [171, 50]
+encoder.lstm.weight_ih_l0 : [1600, 50]
+encoder.lstm.weight_hh_l0 : [1600, 400]
+encoder.lstm.bias_ih_l0 : [1600]
+encoder.lstm.bias_hh_l0 : [1600]
+encoder.lstm.weight_ih_l0_reverse : [1600, 50]
+encoder.lstm.weight_hh_l0_reverse : [1600, 400]
+encoder.lstm.bias_ih_l0_reverse : [1600]
+encoder.lstm.bias_hh_l0_reverse : [1600]
+enc_hidden_to_dec_hidden.weight : [400, 400]
+enc_hidden_to_dec_hidden.bias : [400]
+textual_attention.key_layer.weight : [400, 400]
+textual_attention.query_layer.weight : [400, 400]
+textual_attention.energy_layer.weight : [1, 400]
+attention_decoder.queries_to_keys.weight : [400, 800]
+attention_decoder.queries_to_keys.bias : [400]
+attention_decoder.embedding.weight : [9, 400]
+attention_decoder.lstm.weight_ih_l0 : [1600, 1200]
+attention_decoder.lstm.weight_hh_l0 : [1600, 400]
+attention_decoder.lstm.bias_ih_l0 : [1600]
+attention_decoder.lstm.bias_hh_l0 : [1600]
+attention_decoder.output_to_hidden.weight : [400, 1600]
+attention_decoder.hidden_to_output.weight : [9, 400]
+```
+
+</details>
 
 ## All other experiments (k=1,5,10,50 and adverb vocabulary=10,50,100,150)
 See "Modularity & Augmentation above"
