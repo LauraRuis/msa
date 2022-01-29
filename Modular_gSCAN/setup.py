@@ -1,0 +1,26 @@
+from setuptools import find_packages
+from setuptools import setup
+
+setup(name='Modular_gSCAN',
+      version='0.1',
+      packages=find_packages(),
+      install_requires=[
+            'imageio~=2.9.0',
+            'setuptools~=49.2.1',
+            'pronounceable~=0.1.3',
+            'PyQt5~=5.15.4',
+            'opencv-python~=4.5.1.48',
+            'xlwt~=1.3.0',
+            'torch~=1.8.0',
+            'torchvision~=0.9.0',
+            'numpy~=1.20.1',
+            'gym~=0.18.0',
+            'matplotlib~=3.3.4',
+            'pytest~=6.2.2',
+            'six~=1.15.0',
+            'typing_extensions~=3.7.4.3',
+            'metaphone~=0.6',
+            'nltk~=3.5',
+            'PyYAML~=5.4.1',
+      ]
+)
