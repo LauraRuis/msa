@@ -1,6 +1,9 @@
 # Demo the code
 The experiments can only be run with the real data (and to see how see the file Scripts/README.md), but find below how to demo the code for both the modular model and the baseline.
 
+The code below will demo training and testing on a demo dataset containing only 4 examples, so it will learn those in about 20 iterations, after which
+the testing metrics should already be perfect. Try it yourself below!
+
 ## Baseline
 
 ### Train
