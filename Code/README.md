@@ -41,7 +41,7 @@ This should give the output (if you trained a model with the code above):
 
 ### Train
 
-Go to the folder `Modular_gSCAN` (one level up), install the dependencies with `setup.py`, and run the below command to demo the position module training. The other modules can be trained in a similar way by changing `--module` to the module you want to train (to see the exact commands, look at the `Code/Scripts` folder). 
+Go to the folder `Modular_gSCAN` (one level up), install the dependencies with `setup.py`, and run the below command to demo the position module training. The other modules can be trained in a similar way by changing `--module` to the module you want to train (to see the exact commands, look at the file `Code/Scripts/Modularity_scripts/all_experiments.sh`). 
 
 ```
 python3.8 -m Modularity --mode=train --data_directory=data/demo_dataset \
