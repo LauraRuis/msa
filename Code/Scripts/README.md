@@ -13,6 +13,8 @@ For both the baseline and the modular model the commands to train on some cluste
 ### Modular Experiments on cluster
 Train each module separately by changing the parameters as you want them in `start_<module>.sh` (e.g., `start_interaction.sh` for the interaction module).
 Run the script.
+Training each module takes less than 12 hours on 1 NVIDIA V100 GPU.
 
 ### Baseline Experiments on cluster
 Change the parameters as you want them in `start_experiments.sh` and run the script.
+Training the baseline takes 48 hours on 1 NVIDIA V100 GPU.
