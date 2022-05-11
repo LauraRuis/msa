@@ -2,7 +2,7 @@
 
 ---
 
-This repository contains the code and additional documentation for the anonymous CogSci 2022 submission "Improving Systematic Generalization Through Modularity and Augmentation".
+This repository contains the code and additional documentation for the anonymous CogSci 2022 paper "Improving Systematic Generalization Through Modularity and Augmentation".
 
 Contents:
 
